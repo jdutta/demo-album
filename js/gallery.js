@@ -88,7 +88,7 @@ $(document).ready(function() {
   $.ajax({url:jsonDataSrc, success:function(data, status) {
     showGallery(JSON.parse(data));
   }, error: function() {
-    // do error handling
+    $("#error_splash").show();
   }});
 
   // install handlers for the prev and next buttons
