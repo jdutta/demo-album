@@ -86,9 +86,11 @@ $(document).ready(function() {
   }
 
   $.ajax({url:jsonDataSrc, success:function(data, status) {
+    $("#splash").hide();
     showGallery(JSON.parse(data));
   }, error: function() {
-    $("#error_splash").show();
+    $("#splash").html("Oops! Could not load gallery data!");
+    $("#splash").show();
   }});
 
   // install handlers for the prev and next buttons
