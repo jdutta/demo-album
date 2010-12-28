@@ -1,7 +1,7 @@
 body {
   margin: 0px auto;
   font-family: tahoma, helvetica, serif;
-  background-color: #606060;
+  background-color: #56606a;
 }
 
 #splash {
@@ -93,7 +93,7 @@ body {
 }
 
 #thumbnails {
-  margin: 1em;
+  margin-top: 1em;
 }
 
 #thumbnails ul, #thumbnails li {
@@ -101,11 +101,16 @@ body {
 }
 
 #thumbnails li {
-  margin: 0.5em;
+  margin: 0.6em;
 }
 
 #thumbnails img {
   border: 3px solid #fff;
+}
+
+#thumbnails img:hover {
+  border: 3px solid #ddd;
+  opacity: 0.9;
 }
 
 #thumbnails img.selected {
