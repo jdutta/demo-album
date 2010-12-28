@@ -5,3 +5,7 @@ Features:
 2. Graceful handling of slow loading or missing json data - by showing status in a splash page
 3. Graceful handling of missing image title, date or location
 4. Left/right arrow key navigation
+
+Tested on:
+1. Mac: Chrome, Firefox, Safari
+2. Win: Chrome, IE

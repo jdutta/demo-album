@@ -11,7 +11,8 @@ $(document).ready(function() {
     $("#loading_image").hide();
     $(img).hide();
     $("#image_container").empty().append(img);
-    $(img).fadeIn();
+    if($.browser.msie) { $(img).show(); }
+    else { $(img).fadeIn(); }
   }
 
   function showImage(index) {
