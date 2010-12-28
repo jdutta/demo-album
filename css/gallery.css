@@ -66,6 +66,10 @@ body {
   margin-bottom: -3px;
 }
 
+#image_container.mozilla img {
+  margin-bottom: 0;
+}
+
 #loading_image {
   position: absolute;
   display: none;

@@ -6,7 +6,6 @@ $(document).ready(function() {
   // use a hash to store previously loaded images for faster repeat playback
   var loadedImages = {};
 
-
   function loadImageContainer(img) {
     $("#loading_image").hide();
     $(img).hide();
@@ -121,5 +120,10 @@ $(document).ready(function() {
       $("#link_prev").click();
     }
   });
+
+  // firefox specific hack to get the bottom outer border of large images to align up
+  if($.browser.mozilla) {
+    $("#image_container").addClass("mozilla");
+  }
 
 });
