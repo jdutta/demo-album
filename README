@@ -1,0 +1,7 @@
+Demo photo album to showcase html/js/css.
+
+Features:
+1. JS framework used: jQuery
+2. Graceful handling of missing json data
+3. Graceful handling of missing image title, date or location
+4. Left/right arrow key navigation

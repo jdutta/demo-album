@@ -2,6 +2,8 @@ $(document).ready(function() {
   var jsonDataSrc = "gallery_json.txt";
   var jsonData = null;
   var currIndex = -99;
+
+  // use a hash to store previously loaded images for faster repeat playback
   var loadedImages = {};
 
 
