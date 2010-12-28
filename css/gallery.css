@@ -65,6 +65,11 @@ body {
   margin-bottom: -3px;
 }
 
+#loading_image {
+  position: absolute;
+  display: none;
+}
+
 #image_title {
   margin-top: .8em;
   font-size: 1.2em;

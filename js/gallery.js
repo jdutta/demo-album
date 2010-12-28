@@ -8,8 +8,10 @@ $(document).ready(function() {
 
 
   function loadImageContainer(img) {
-    $("#image_container").empty();
-    $("#image_container").append(img);
+    $("#loading_image").hide();
+    $(img).hide();
+    $("#image_container").empty().append(img);
+    $(img).fadeIn();
   }
 
   function showImage(index) {
@@ -20,6 +22,14 @@ $(document).ready(function() {
     }
     if(currIndex == index) { return; }
     currIndex = index;
+
+    // show loader image
+    var offset = $("#image_container img").offset();
+    var width =  $("#image_container img").width();
+    var height = $("#image_container img").height();
+    if(offset) {
+      $("#loading_image").css("left", offset.left + width/2).css("top", offset.top + height/2).show();
+    }
 
     // highlight thumbnail 
     $("#thumbnails img").removeClass("selected")
